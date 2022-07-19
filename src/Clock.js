@@ -3,19 +3,30 @@ import React, {useState, useEffect} from "react";
 
 function Clock(props) {
 
-  let [time, setTime] = useState(props.value);
+  let [time, setTime] = useState(props.value)
 
-  useEffect(() => {
-    if(time > 0) {
-      setInterval(() => setTime(time -1), 1000)
-    } else {
-      setInterval(() => setTime(11 -1), 1000)
+  useEffect(()=> {
+    let myInterval = setInterval(() => {
+      if(time > 0) {
+        setTime(time -1)
+      } if (time === 0) {
+        setTime(10)
+      }
+    }, 1000)
+
+    return () => {
+      clearInterval(myInterval)
     }
+
+
   }, [time])
 
 
+
+
   return (<div>{time}</div>)
+
+
 }
 
-
-export default Clock;
+export default Clock
