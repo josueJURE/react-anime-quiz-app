@@ -12,19 +12,23 @@ export let anime = [
   name: "Dragon ball",
   picture: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/03/goku-forms-2-e1553008088589.jpg?q=50&fit=contain&w=767&h=381&dpr=1.5",
   answers: ['DBZ', 'One Punch', "Dragon ball"],
+},
+{
+  name: "naruto",
+  picture: "https://res.cloudinary.com/jerrick/image/upload/v1616592065/605b3cc118e784001e22da0d.jpg",
+  answers: ["naruto", "Death Note", "Spy x Familly"],
+},
+{
+  name: "Demon Slayer",
+  picture: "https://cdn.vox-cdn.com/thumbor/gcVHhhZ4VwVswvbDPvI-RfQ7ECQ=/1400x1050/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/19721018/Tanjiro__Demon_Slayer_.png",
+  answers: ["Evangelion.", "Demon Slayer", "Cowboy Bebop"],
+},
+{
+  name: "Ghost in the shell",
+  picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VBbI5HMki5cmjP_Gq0TdyA6VZn_0_fmkhg&usqp=CAU",
+  answers: ["Ghost in the shell", "Bleach", "Fullmetal Alchemist: Brotherhood"],
+
 }
-// {
-//   name: "naruto",
-//   picture: "https://res.cloudinary.com/jerrick/image/upload/v1616592065/605b3cc118e784001e22da0d.jpg"
-// },
-// {
-//   name: "Demon Slayer",
-//   picture: "https://cdn.vox-cdn.com/thumbor/gcVHhhZ4VwVswvbDPvI-RfQ7ECQ=/1400x1050/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/19721018/Tanjiro__Demon_Slayer_.png"
-// },
-// {
-//   name: "Ghost in the shell",
-//   picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VBbI5HMki5cmjP_Gq0TdyA6VZn_0_fmkhg&usqp=CAU"
-// }
 ]
 
 // function ImagesHandler(props) {
