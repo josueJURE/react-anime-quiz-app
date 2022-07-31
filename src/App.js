@@ -1,8 +1,9 @@
-import Clock from "./Clock"
-import { anime } from "./ImagesHandler"
+import Clock from "./Clock";
+import { anime } from "./ImagesHandler";
 import './App.css';
 import { useState, useEffect} from 'react';
-import Buttons from "./UserAnswer"
+import Buttons from "./UserAnswer";
+import TrackQuestion from "./TrackQuestion"
 
 function App() {
   const [imageCounter, setImageCounter] = useState(0)
@@ -25,10 +26,10 @@ function App() {
     if(e.target.innerHTML === anime[imageCounter].name) {
       setScore(score + 1)
     }
-    if(imageCounter < 1) {
+    if(imageCounter < anime.length - 1) {
       setImageCounter(imageCounter + 1)
     }
-    
+
   }
 
   const reset = (e) => {
@@ -40,8 +41,14 @@ function App() {
   return (
     <div>
       <h1 style={{ fontSize: '40px', color: 'red'}}>Your Score: {score}</h1>
+
       <div>
-        <h1>{anime[imageCounter].name}</h1>
+        <TrackQuestion
+          score={score}
+          length={anime.length}
+
+        />
+
         <img src={`${anime[imageCounter].picture}`} style={{ height: '150px', width: '300px'}}/>
         {anime[imageCounter].answers.map((answer, index) => <Buttons
           key={index}
