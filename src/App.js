@@ -42,24 +42,26 @@ function App() {
     <div>
       <h1 style={{ fontSize: '40px', color: 'red'}}>Your Score: {score}</h1>
 
-      <div>
-        <TrackQuestion
-          score={score}
-          length={anime.length}
 
-        />
+      <TrackQuestion
+        score={score}
+        length={anime.length}
 
-        <img src={`${anime[imageCounter].picture}`} style={{ height: '150px', width: '300px'}}/>
-        {anime[imageCounter].answers.map((answer, index) => <Buttons
-          key={index}
-          id={index}
-          value={answer}
-          onChecked={handleClick}
+      />
+
+      <img src={`${anime[imageCounter].picture}`} style={{ height: '150px', width: '300px'}}/>
+      {anime[imageCounter].answers.map((answer, index) => <Buttons
+        key={index}
+        id={index}
+        value={answer}
+        onChecked={handleClick}
 
 
-                                                            />)}
-        <button onClick={(e) => reset(e)}>RESET</button>
-      </div>
+                                                          />)}
+      <button onClick={(e) => reset(e)}>RESET</button>
+      {anime.map(x => <div style={{height: '30px', width: '30px', backgroundColor: 'green', margin: '10px'}}></div> )}
+      
+
     </div>
   );
 }
