@@ -47,13 +47,13 @@ function App() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    if(e.target.innerHTML === anime[currentQuestion].name) {
+    if(e.target.innerHTML === anime[currentQuestion].correctAnswer) {
       setScore(score + 1);
       setUserAnswers(userAnswers.map(
         (answer, index) => index === currentQuestion ? true : answer
       ));
     }
-    if(e.target.innerHTML !== anime[currentQuestion].name) {
+    if(e.target.innerHTML !== anime[currentQuestion].correctAnswer) {
       setUserAnswers(userAnswers.map(
         (answer, index) => index === currentQuestion ? false : answer
       ));

@@ -4,7 +4,7 @@ import Clock from "./Clock"
 
 export let anime = [
 {
-  name: "Attack On Titans",
+  correctAnswer: "Attack On Titans",
   picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYjy_bS8t3ScWyG7q94fIltnar3ChaOHmGA&usqp=CAU",
   answers: ['DBZ', 'One Punch', "Attack On Titans"],
   result: null,
