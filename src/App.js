@@ -82,9 +82,8 @@ function App() {
           key={index}
           id={index}
           value={answer}
-          onChecked={() => {
-
-          }}
+          onChecked={handleClick
+          }
         />)
       }
       <button onClick={(e) => reset(e)}>RESET</button>
